@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMWQuiz.Infra.Data", "BMWQu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMWQuiz.Core", "BMWQuiz.Core\BMWQuiz.Core.csproj", "{6928C2F8-565D-4B46-835D-7D9E63031F90}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMWQuiz.Presentation.API", "BMWQuiz.Presentation.API\BMWQuiz.Presentation.API.csproj", "{72A9FDA0-FC9C-4DCE-9C29-79D08041CE0F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{6928C2F8-565D-4B46-835D-7D9E63031F90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6928C2F8-565D-4B46-835D-7D9E63031F90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6928C2F8-565D-4B46-835D-7D9E63031F90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72A9FDA0-FC9C-4DCE-9C29-79D08041CE0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72A9FDA0-FC9C-4DCE-9C29-79D08041CE0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72A9FDA0-FC9C-4DCE-9C29-79D08041CE0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72A9FDA0-FC9C-4DCE-9C29-79D08041CE0F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{DBECDE42-CC02-458C-A7E2-2C8E39D041FE} = {F848B722-4E08-430D-B771-89DD4D2C8332}
 		{93409240-A076-4CE0-BA56-668514B1DD52} = {61AC0A27-9179-4126-B22C-9AF98D912C44}
 		{6928C2F8-565D-4B46-835D-7D9E63031F90} = {1D1DB59C-1100-45F7-BFEB-22ADF6F3BC96}
+		{72A9FDA0-FC9C-4DCE-9C29-79D08041CE0F} = {30076FD8-7623-4B81-AD4C-62EAF0DF736C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5F266B0F-1A4D-469B-8CAB-E286E25401AD}

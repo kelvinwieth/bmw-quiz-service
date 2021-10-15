@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace BMWQuiz.Core.Services
 {
-    public class QuizServices : IQuizServices
+    public class QuizService : IQuizService
     {
         private readonly IQuestionRepository _questionRepository;
 
-        public QuizServices(IQuestionRepository questionRepository)
+        public QuizService(IQuestionRepository questionRepository)
         {
             _questionRepository = questionRepository;
         }

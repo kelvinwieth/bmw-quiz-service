@@ -11,10 +11,17 @@ namespace BMWQuiz.Infra.Data.Repositories
     {
         private readonly BMWQuizDbContext _context;
 
+        public QuestionRepository(BMWQuizDbContext context)
+        {
+            _context = context;
+        }
+
         public async Task<List<Question>> GetAllAsync()
         {
             return await _context.Questions
                 .AsNoTracking()
+                .Include(q => q.QuestionOptions)
+                    .ThenInclude(qo => qo.Answer)
                 .ToListAsync();
         }
     }
