@@ -18,7 +18,7 @@ namespace BMWQuiz.Core.Extensions
 
         public static List<string> AsResponseDto(this List<QuestionOption> options)
         {
-            return options.Select(o => o.Answer.ToString()).ToList();
+            return options.Select(o => o.Answer.Description).ToList();
         }
     }
 }

@@ -15,7 +15,5 @@ namespace BMWQuiz.Domain.Entities
         public string Description { get; private set; }
 
         public List<QuestionOption> QuestionOptions { get; private set; }
-
-        public override string ToString() => Description;
     }
 }
