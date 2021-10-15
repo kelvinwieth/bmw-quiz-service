@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BMWQuiz.Domain\BMWQuiz.Domain.csproj" />
+    <ProjectReference Include="..\BMWQuiz.Infra.Data\BMWQuiz.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>
