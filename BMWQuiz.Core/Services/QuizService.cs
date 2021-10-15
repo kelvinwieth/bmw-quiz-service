@@ -2,7 +2,7 @@
 using BMWQuiz.Core.Dtos.Response;
 using BMWQuiz.Core.Extensions;
 using BMWQuiz.Domain.Entities;
-using BMWQuiz.Domain.Interfaces;
+using BMWQuiz.Infra.Data.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;

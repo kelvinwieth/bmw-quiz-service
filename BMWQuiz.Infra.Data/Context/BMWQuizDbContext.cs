@@ -1,4 +1,5 @@
 ﻿using BMWQuiz.Domain.Entities;
+using BMWQuiz.Infra.Data.Mapping;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
@@ -6,10 +7,8 @@ namespace BMWQuiz.Infra.Data.Context
 {
     public class BMWQuizDbContext : DbContext
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlite("Data Source=C:\\SQLiteStudio\\BMWQuiz.db");
-        }
+        public BMWQuizDbContext(DbContextOptions options) : base(options)
+        { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

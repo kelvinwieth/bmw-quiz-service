@@ -1,5 +1,5 @@
 ﻿using BMWQuiz.Domain.Entities;
-using BMWQuiz.Domain.Interfaces;
+using BMWQuiz.Infra.Data.Interfaces;
 using BMWQuiz.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;

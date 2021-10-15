@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace BMWQuiz.Domain.Interfaces
+namespace BMWQuiz.Infra.Data.Interfaces
 {
     public interface IQuestionRepository
     {

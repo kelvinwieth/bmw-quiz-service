@@ -1,9 +1,10 @@
 using BMWQuiz.Core.Services;
-using BMWQuiz.Domain.Interfaces;
 using BMWQuiz.Infra.Data.Context;
+using BMWQuiz.Infra.Data.Interfaces;
 using BMWQuiz.Infra.Data.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -25,7 +26,9 @@ namespace BMWQuiz.Presentation.API
         {
             services.AddScoped<IQuizService, QuizService>();
             services.AddScoped<IQuestionRepository, QuestionRepository>();
-            services.AddDbContext<BMWQuizDbContext>();
+            services.AddDbContext<BMWQuizDbContext>(options => 
+                options.UseSqlite(Configuration.GetConnectionString("SQLite"))
+            );
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
