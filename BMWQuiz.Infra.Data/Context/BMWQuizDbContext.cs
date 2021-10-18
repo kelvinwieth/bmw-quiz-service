@@ -1,5 +1,4 @@
 ﻿using BMWQuiz.Domain.Entities;
-using BMWQuiz.Infra.Data.Mapping;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
