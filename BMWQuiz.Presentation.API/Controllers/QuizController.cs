@@ -1,4 +1,5 @@
 ﻿using BMWQuiz.Core.Dtos.Request;
+using BMWQuiz.Core.Dtos.Response;
 using BMWQuiz.Core.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -19,7 +20,7 @@ namespace BMWQuiz.Presentation.API.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetQuestionsAsync()
+        public async Task<ActionResult<QuestionResponseDto>> GetQuestionsAsync()
         {
             try
             {
@@ -33,7 +34,7 @@ namespace BMWQuiz.Presentation.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> PostQuizOptionsAsync([FromBody] QuizResultRequestDto quizRequest)
+        public async Task<ActionResult<QuizResultResponseDto>> PostQuizOptionsAsync([FromBody] QuizResultRequestDto quizRequest)
         {
             try
             {
