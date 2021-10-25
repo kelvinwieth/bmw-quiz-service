@@ -4,6 +4,7 @@ using BMWQuiz.Core.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace BMWQuiz.Presentation.API.Controllers
@@ -20,7 +21,7 @@ namespace BMWQuiz.Presentation.API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<QuestionResponseDto>> GetQuestionsAsync()
+        public async Task<ActionResult<List<QuestionResponseDto>>> GetQuestionsAsync()
         {
             try
             {
