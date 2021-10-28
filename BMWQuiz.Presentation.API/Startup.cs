@@ -30,6 +30,8 @@ namespace BMWQuiz.Presentation.API
                 options.UseSqlite(Configuration.GetConnectionString("SQLite"))
             );
 
+            services.AddCors();
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -47,9 +49,16 @@ namespace BMWQuiz.Presentation.API
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "BMWQuiz.Presentation.API v1"));
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors(builder => builder
+                .AllowAnyHeader()
+                .AllowAnyMethod()
+                .SetIsOriginAllowed((host) => true)
+                .AllowCredentials()
+            );
 
             app.UseAuthorization();
 
