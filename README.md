@@ -1,6 +1,7 @@
 # BMWQuiz
-## Overview
-Back-end part of BWM Quiz, containing all the business rules, database migrations and a web api.
+### Back-end part of BWM Quiz, containing all the business rules, database migrations and a web api.
+
+![apidemo](https://user-images.githubusercontent.com/79933699/139300176-bebe28ff-48a4-4ff9-8f4c-d334c01a8001.gif)
 
 ## Instalation and usage
 ### Requirements
@@ -12,3 +13,6 @@ Back-end part of BWM Quiz, containing all the business rules, database migration
 - To generate the database, you can either use the EF CLI with the command `dotnet ef database update`, or in the PM Console in Visual Studio with the command `database-update`. In both cases, don't forget to choose the `Infra.Data` as default project.
 ### Run the web API
 - Open a CLI in the `Presentation.API` project, and run `dotnet run`. If you want to use hot reload, use `dotnet watch run`.
+
+## About
+This project is a technical challenge proposed by [Zallpy](https://zallpy.com/) intership program, Zallpy Academy.
